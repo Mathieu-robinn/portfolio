@@ -1,0 +1,22 @@
+
+
+
+<div class="project" [id]="project().projectName">
+    <img [src]="project().imagePath" [alt]="project().projectName" />
+
+    <div class="content">
+        <h2 class="title">{{project().projectName}}</h2>
+        <p class="description">{{project().description}}</p>
+        
+        @if (project().skills) {
+        <h3>Skills</h3>
+        <ul class="skills">
+            @for (skill of project().skills; track $index) {
+            <a [routerLink]="['/skills']" [queryParams]="{ target: skill }">   
+                <li class="skill">{{skill}}</li>
+            </a> 
+            }
+        </ul>
+        }
+    </div>
+</div>

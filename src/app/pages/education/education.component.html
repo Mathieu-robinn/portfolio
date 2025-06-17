@@ -1,0 +1,7 @@
+<h2 class="title">{{appConfig.educationPageTitle}}</h2>
+<p class="subtitle">{{appConfig.educationPageDescription}}</p>
+<div class="education">
+@for (education of appConfig.educationSections; track $index) {
+    <app-education-card [education]="education"></app-education-card>
+}
+</div>

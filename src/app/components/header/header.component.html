@@ -1,0 +1,20 @@
+<nav>
+  <div class="nav-links">
+    @for (route of Routes; track route) {
+      @if (route.visible) {
+        <a 
+          [routerLink]="route.routeUrl" 
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{exact: true}"
+          [title]="route.routeName">
+          {{ route.routeName }}
+        </a>
+      }
+    }
+  </div>
+  <div class="cv-download">
+    <a href="/CV.pdf" download="CV_Robin_Mathieu.pdf">
+      Mon CV
+    </a>
+  </div>
+</nav>

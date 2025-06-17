@@ -1,0 +1,13 @@
+
+<h2 class="title">{{appConfig.projectsPageTitle}}</h2>
+<p class="subtitle">{{appConfig.projectsPageDescription}}</p>
+<div class="projects">
+@for (projectSection of appConfig.projectSections; track $index) {
+
+    <div class="projectSection">
+        @for (project of projectSection.entities; track $index) {
+            <app-project-card [project]="project"></app-project-card>
+        }
+    </div>
+}
+</div>

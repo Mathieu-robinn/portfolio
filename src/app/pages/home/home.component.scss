@@ -1,0 +1,131 @@
+.hero {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background: white;
+      color: #6e8efb;
+      padding: 10px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+
+      &:hover {
+        background: #ddd;
+      }
+    }
+  }
+}
+
+.about {
+  padding: 60px 20px;
+  background: #f9f9f9;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
+
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+
+      .profile-img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .about-text {
+        max-width: 600px;
+        text-align: left;
+
+        p {
+          margin-bottom: 15px;
+          font-size: 1.1rem;
+          line-height: 1.6;
+          color: #333;
+        }
+
+        .btn {
+          display: inline-block;
+          margin-top: 20px;
+          background: #6e8efb;
+          color: white;
+          padding: 10px 20px;
+          border-radius: 25px;
+          text-decoration: none;
+          font-weight: bold;
+          transition: background 0.3s;
+
+          &:hover {
+            background: #4d6ecf;
+          }
+        }
+      }
+    }
+  }
+}
+
+.links {
+  padding: 60px 20px;
+  text-align: center;
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .link-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+
+      .btn {
+        background: #6e8efb;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background 0.3s;
+
+        &:hover {
+          background: #4d6ecf;
+        }
+      }
+    }
+  }
+}

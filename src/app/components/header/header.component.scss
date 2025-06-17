@@ -1,0 +1,58 @@
+nav {
+  display: flex;
+  justify-content: space-between; // liens à gauche/centre et CV à droite
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  .nav-links {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-grow: 1;              // prend tout l'espace disponible entre le bord et le bouton CV
+    gap: 2rem;                // espace entre les liens, plus clair que margin sur chaque lien
+    // ou margin: 0 auto; si tu veux centrer horizontalement
+
+    a {
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #333;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s, transform 0.2s;
+
+      &:hover {
+        background-color: #f0f0f0;
+        color: #007acc;
+        transform: translateY(-2px);
+      }
+
+      &.active {
+        background-color: #007acc;
+        color: #ffffff;
+        transform: scale(1.05);
+        box-shadow: 0 4px 12px rgba(0, 122, 204, 0.4);
+      }
+    }
+  }
+
+  .cv-download {
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      background-color: #007acc;
+      color: #ffffff;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      transition: background-color 0.3s, transform 0.2s;
+
+      &:hover {
+        background-color: #005fa3;
+        transform: translateY(-2px);
+      }
+    }
+  }
+}

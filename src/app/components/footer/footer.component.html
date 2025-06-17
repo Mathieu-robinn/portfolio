@@ -1,0 +1,20 @@
+<footer class="footer">
+  <div class="footer-content">
+    <nav class="footer-nav">
+      @for (route of Routes; track route) {
+        @if(route.visible){
+          <a 
+            [routerLink]="route.routeUrl" 
+            [routerLinkActive]="'active'" 
+            [routerLinkActiveOptions]="{exact: true}"
+            [title]="route.routeName">
+            {{ route.routeName }}
+          </a>
+        }
+      }
+    </nav>
+    <div class="footer-info">
+      <p>&copy; {{ currentYear }} Mon Portfolio. Tous droits réservés. Robin Mathieu</p>
+    </div>
+  </div>
+</footer>

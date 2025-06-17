@@ -1,0 +1,69 @@
+/* Conteneur général de la page projets */
+.projects {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 1700px;
+  margin: 0 auto; /* Centrage horizontal */
+}
+
+/* Titre principal */
+
+
+/* Sections avec grid */
+.projectSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+  gap: 2rem; /* Ajout d’un espace entre les colonnes et les rows */
+  margin-bottom: 3rem; /* Espacement entre les sections */
+}
+
+/* Titre et sous-titre : pleine largeur */
+.projectSectionTitle,
+.projectSectionSubtitle {
+  grid-column: 1 / -1; /* Occupe toute la ligne */
+  text-align: left; /* Alignement à gauche */
+  margin-bottom: 1rem;
+}
+
+.projectSectionTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #34495e;
+}
+
+.projectSectionSubtitle {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+}
+
+/* Cards déjà stylées, mais adaptation si nécessaire */
+app-project-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .projectSection {
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+  }
+}
+
+@media (max-width: 600px) {
+  .projectSection {
+    grid-template-columns: 1fr; /* 1 colonne */
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+

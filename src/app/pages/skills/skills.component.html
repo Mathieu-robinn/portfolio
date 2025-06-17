@@ -1,0 +1,14 @@
+
+<h2 class="title">{{appConfig.skillsPageTitle}}</h2>
+<p class="subtitle">{{appConfig.skillsPageDescription}}</p>
+<div class="skill">
+@for (skillSection of appConfig.skillsSections; track $index) {
+
+    <div class="skillSection">
+        <h4 class="skillSectionTitle">{{skillSection.sectionTitle}}</h4>
+        @for (skill of skillSection.entities; track $index) {
+            <app-skill-card [skill]="skill"></app-skill-card>
+        }
+    </div>
+}
+</div>

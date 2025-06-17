@@ -1,0 +1,20 @@
+<div class="experience">
+  <img [src]="experience().imagePath" [alt]="experience().company" />
+
+  <div class="content">
+    <h2 class="title">{{experience().type}} - {{experience().position}} - {{experience().company}}</h2>
+    <p class="date">{{experience().period}} - {{experience().duration}}</p>
+    <p class="workcondition">{{experience().locationType}} - {{experience().hoursPerWeek}} h/semaine</p>
+    <p class="place">{{experience().emplacement}}</p>
+    <p class="description">{{experience().description}}</p>
+
+    @if (experience().projects) {
+      <h3>Projets</h3>
+      <ul class="projets">
+        @for (project of experience().projects; track $index) {
+          <li class="projet">{{project}}</li>
+        }
+      </ul>
+    }
+  </div>
+</div>

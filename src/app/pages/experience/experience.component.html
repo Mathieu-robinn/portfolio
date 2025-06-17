@@ -1,0 +1,15 @@
+
+<h2 class="title">{{appConfig.experiencePageTitle}}</h2>
+<p class="subtitle">{{appConfig.experiencePageDescription}}</p>
+<div class="experiences">
+@for (experienceSection of appConfig.experienceSections; track $index) {
+
+    <div class="experienceSection">
+        <!--<h4 class="experienceSectionTitle">{{experienceSection.sectionTitle}}</h4>
+        <p class="experienceSectionSubtitle">{{experienceSection.sectionSubtitle}}</p> -->
+        @for (experience of experienceSection.entities; track $index) {
+            <app-experience-card [experience]="experience"></app-experience-card>
+        }
+    </div>
+}
+</div>

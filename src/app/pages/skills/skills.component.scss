@@ -1,0 +1,30 @@
+.skillSection {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 3 par ligne */
+
+}
+.skillSectionTitle {
+  grid-column: 1 / -1;  // déjà défini, titre sur toute la largeur
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #007acc;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-left: 1.5rem;
+}
+
+/* Titre et sous-titre : pleine largeur */
+.skillSectionTitle,
+.skillSectionSubtitle {
+  grid-column: 1 / -1; /* Occupe toute la ligne */
+}
+
+app-skill-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+

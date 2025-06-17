@@ -1,0 +1,61 @@
+.education {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  background: #f6fcff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  align-items: flex-start;
+  margin: 1.5rem;
+
+  img {
+    width: clamp(4rem, 15vw, 7rem);
+  }
+  
+  .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    h2{
+        margin-top: 0rem;
+        margin-bottom: 0.7rem;
+    }
+
+    p {
+      margin: 0.2rem; // réduit l’espace entre les paragraphes
+    }
+
+    .title {
+      font-weight: bold;
+      color: #2c3e50;
+    }
+
+    .date,
+    .place {
+      color: #7f8c8d;
+    }
+
+    .description {
+
+      color: #34495e;
+      margin-top: 0.5rem;
+    }
+  }
+
+  // Responsive
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    img {
+      margin-bottom: 1rem;
+    }
+
+    .content {
+      align-items: center;
+    }
+  }
+}
