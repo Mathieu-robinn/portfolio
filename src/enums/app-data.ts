@@ -228,6 +228,54 @@ const GestionProketSection : SkillSection=  {
 }
 
 
+const IUTSection : SkillSection=  {
+    sectionTitle: "Compétences du BUT Informatique",
+    sectionSubtitle: "Mes compétences/ connaissances en gestion de projets",
+    entities: [
+        {
+            skillName: "Réaliser",
+            imagePath: "https://f.hellowork.com/helloworkplace/2021/01/inadequation-competences.jpg",
+            projects: [
+                "PlayNWIn","Liste2Courses","FlyPlane","Synchronisation_Outlook","Google_Maps"
+            ],
+        },{
+            skillName: "Optimiser",
+            imagePath: "https://f.hellowork.com/helloworkplace/2021/01/inadequation-competences.jpg",
+            projects: [
+                "PlayNWIn","Liste2Courses","FlyPlane","Synchronisation_Outlook","Google_Maps",
+            ],
+        },
+        {
+            skillName: "Administrer",
+            imagePath: "https://f.hellowork.com/helloworkplace/2021/01/inadequation-competences.jpg",
+            projects: [
+                "PlayNWIn","Liste2Courses","Synchronisation_Outlook","Google_Maps",
+            ],
+        },{
+            skillName: "Gérer",
+            imagePath: "https://f.hellowork.com/helloworkplace/2021/01/inadequation-competences.jpg",
+            projects: [
+                "PlayNWIn","Liste2Courses","FlyPlane","Synchronisation_Outlook","Google_Maps",
+            ],
+        },
+        {
+            skillName: "Conduire",
+            imagePath: "https://f.hellowork.com/helloworkplace/2021/01/inadequation-competences.jpg",
+            projects: [
+                "PlayNWIn","Liste2Courses","FlyPlane"
+            ],
+        },{
+            skillName: "Collaborer",
+            imagePath: "https://f.hellowork.com/helloworkplace/2021/01/inadequation-competences.jpg",
+            projects: [
+                "PlayNWIn","Liste2Courses","FlyPlane",
+            ],
+        },
+    ]
+}
+
+
+
 // const OthersSection : SkillSection=  {
 //     sectionTitle: "Autres",
 //     sectionSubtitle: "Mes autres compétences/ connaissances",
@@ -244,41 +292,41 @@ const PersonalProjects : ProjectSection=  {
         {
             projectName: "PlayNWIn",
             description: "Site Web simulant un site de paris sportifs avec matchs, scores et côtes en direct. Site disponible à cette adresse: playnwin.games.",
-            imagePath: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_82DBV8qlAmrVh4-Q_0M0picp1qaMprHH_A&s",
+            imagePath: "PlayNWin.png",
             skills: [
-                "HTML/CSS","Javascript","PHP","SQL","Git",
+                "HTML/CSS","Javascript","PHP","SQL","Git","Réaliser","Optimiser","Administrer","Gérer","Conduire","Collaborer",
             ],
         },
         {
             projectName: "Liste2Courses",
             description: "Site en PHP/Symfony permettant d’effectuer des listes de courses communes",
-            imagePath: "https://ostraining.com/wp-content/uploads/coding/html5-css3-hd.jpg",
+            imagePath: "https://www.tutoderien.com/wp-content/uploads/2020/05/image006.jpg",
             skills: [
-                "HTML/CSS","PHP","Symphony","SQL","Git",
+                "HTML/CSS","PHP","Symphony","SQL","Git","Réaliser","Optimiser","Administrer","Gérer","Conduire","Collaborer",
             ],
         },
         {
             projectName: "FlyPlane",
             description: "Application Java + Swing traitant des données d’un graphe mathématique dans le but de déterminer des chemins optimaux",
-            imagePath: "https://cdn.pixabay.com/photo/2020/03/27/08/50/dawn-4972905_1280.jpg",
+            imagePath: "FlyPlane.png",
             skills: [
-                "Java","Git",
+                "Java","Git","Réaliser","Optimiser","Gérer","Conduire","Collaborer",
             ],
         },
         {
             projectName: "Synchronisation_Outlook",
-            description: "Site Web simulant un site de paris sportifs avec matchs, scores et côtes en direct. Site disponible à cette adresse: playnwin.games.",
-            imagePath: "https://ostraining.com/wp-content/uploads/coding/html5-css3-hd.jpg",
+            description: "Réalisation d’un système complet de synchronisation unidirectionnelle entre un CRM et Outlook via l’API Microsoft Graph, avec gestion des tokens, utilisation des métadonnées, catégorisation des événements, et respect strict du RGPD pour garantir la confidentialité des données utilisateurs.",
+            imagePath: "Outlook.png",
             skills: [
-                "HTML/CSS","Angular",".NET","SQL","Azure","Git",
+                "HTML/CSS","Angular",".NET","SQL","Azure","Git","Réaliser","Optimiser","Administrer","Gérer","Conduire",
             ],
         },
         {
             projectName: "Google_Maps",
-            description: "Site Web simulant un site de paris sportifs avec matchs, scores et côtes en direct. Site disponible à cette adresse: playnwin.games.",
-            imagePath: "https://ostraining.com/wp-content/uploads/coding/html5-css3-hd.jpg",
+            description: "Conception d'un module cartographique dynamique intégrant Google Maps avec géocodage massif de plus de 6000 adresses, calcul de distances via fonctions mathématiques backend, filtrage spatial optimisé en base de données, recherche avec autocomplétion et affichage interactif des entreprises sur la carte.",
+            imagePath: "Maps.png",
             skills: [
-                "HTML/CSS","Angular",".NET","SQL","Git",
+                "HTML/CSS","Angular",".NET","SQL","Git","Réaliser","Optimiser","Administrer","Gérer","Conduire",
             ],
         },
     ]
@@ -342,6 +390,7 @@ export const AppConfig = {
         NetworkSection,
         ExploitationSystemeSection,
         GestionProketSection,
+        IUTSection,
         //OthersSection,
 
     ],

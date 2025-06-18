@@ -23,7 +23,7 @@ export const RoutesData: RouteData[] = [
         visible: true,
     },
     {
-        routeName: "Skills",
+        routeName: "Compétences",
         routeUrl: AppRoutes.SKILLS,
         visible: true,
     },
